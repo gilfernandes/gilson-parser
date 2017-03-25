@@ -13,4 +13,4 @@ https://github.com/gilfernandes/gilson-parser/blob/master/src/test/java/com/fern
 
 This project uses Maven. Simply use this command:
 
-mvn clean install
+    mvn clean install
