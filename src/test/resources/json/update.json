@@ -1,0 +1,115 @@
+{
+  "_id": ObjectId("58c98ce2a90489183f0e2e2b"),
+  "customer": {
+    "owner": {
+      "key": {
+        "systemOwner": "TUI GROUP",
+        "system": "CP",
+        "id": "C"
+      },
+      "name": "TUI Suisse Ltd"
+    },
+    "firstName": "Thorsten",
+    "lastName": "Markgraf",
+    "gender": "Male",
+    "contactPoints": {
+      "contactPoints": [{
+        "contactAccount": null,
+        "contactPhoneNumber": null,
+        "contactAddress": {
+          "careOf": null,
+          "geographicalAddress": {
+            "country": null,
+            "postCode": {
+              "postCode": "1 N"
+            },
+            "unStructuredAddress": null,
+            "structuredAddress": {
+              "street": "Main Street",
+              "town": "London",
+              "region": "Greater London",
+              "county": "Brent"
+            }
+          }
+        },
+        "contactEmailAddress": null
+      }, {
+        "contactAccount": null,
+        "contactPhoneNumber": {
+          "lineType": "Mobile",
+          "phoneNumberCategory": "Private",
+          "unStructuredPhoneNumber": null,
+          "structuredPhoneNumber": {
+            "areaCode": 170,
+            "localNumber": 33333333,
+            "internationalDialingCode": {
+              "internationalDialingCode": "+49",
+              "country": {
+                "country": "DE DE DE DE DE DE"
+              }
+            }
+          }
+        },
+        "contactAddress": null,
+        "contactEmailAddress": null
+      }, {
+        "contactAccount": null,
+        "contactPhoneNumber": {
+          "lineType": "Mobile",
+          "phoneNumberCategory": "Private",
+          "unStructuredPhoneNumber": null,
+          "structuredPhoneNumber": {
+            "areaCode": 170,
+            "localNumber": 55555555,
+            "internationalDialingCode": {
+              "internationalDialingCode": "+49",
+              "country": {
+                "country": "DE DE DE DE DE DE"
+              }
+            }
+          }
+        },
+        "contactAddress": null,
+        "contactEmailAddress": null
+      }]
+    },
+    "customerId": {
+      "masterKey": {
+        "systemOwner": "CH",
+        "system": "KUBA",
+        "id": "C@0248870263@DHUB"
+      },
+      "sourceKeys": {
+        "keies": [{
+          "systemOwner": "CH",
+          "system": "KUBA",
+          "id": "C@0248870263@DHUB"
+        }, {
+          "systemOwner": "AT",
+          "system": "AUBA",
+          "id": "C@0248870264@DHUB"
+        }, {
+          "systemOwner": "DE",
+          "system": "DUBA",
+          "id": "C@0248870265@DHUB"
+        }, {
+          "system": "MDM",
+          "systemOwner": "GROUP",
+          "id": "58c98ce2a90489183f0e2e2a"
+        }]
+      }
+    },
+    "profiles": {
+      "value": {
+        "profiles": [{
+          "name": "MeineTUI",
+          "values": []
+        }]
+      }
+    },
+    "extraTitle": "Prof.Baron",
+    "version": NumberLong("1482235472195"),
+    "customerLevel": "Silver",
+    "mdmId": ObjectId("58c98ce2a90489183f0e2e2a")
+  }
+}

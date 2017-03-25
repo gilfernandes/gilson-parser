@@ -1,0 +1,11 @@
+[
+  "hello",
+  {
+    "name": "Gil Fernandes",
+    "age": 47
+  },
+  false,
+  null,
+  2,
+  23.1
+]

@@ -1,0 +1,8 @@
+{
+  "customer": {
+    "firstName": "Gil",
+    "lastName": "Fernandes",
+    "male": true,
+    "married": false
+  }
+}

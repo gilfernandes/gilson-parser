@@ -1,0 +1,119 @@
+{
+  "_id": "58d26f6ce4b000fd45f8b144",
+  "customer": {
+    "owner": {
+      "key": {
+        "systemOwner": "CP",
+        "system": "TU GROUP",
+        "id": "3109880"
+      }
+    },
+    "firstName": "Klara",
+    "lastName": "Besenstiel",
+    "gender": "Female",
+    "contactPoints": {
+      "contactPoints": [
+        {
+          "contactAccount": null,
+          "contactPhoneNumber": null,
+          "contactAddress": {
+            "addressCategory": "Personal",
+            "geographicalAddress": {
+              "country": {
+                "country": "D"
+              },
+              "postCode": {
+                "postCode": "30659"
+              },
+              "unStructuredAddress": null,
+              "structuredAddress": {
+                "buildingNumber": "15",
+                "street": "Im Heidkampe",
+                "town": "Hannover"
+              }
+            }
+          },
+          "contactEmailAddress": null,
+          "correlationID": "7c3ea20b-36b6-4e46-bb57-0f4ceea535ac"
+        },
+        {
+          "contactAccount": null,
+          "contactPhoneNumber": null,
+          "contactAddress": null,
+          "contactEmailAddress": {
+            "emailCategory": "Personal",
+            "emailAddress": {
+              "email": "klara.besenstiel@tui.de"
+            }
+          },
+          "correlationID": "18414b3b-8b60-4dbd-9aba-4f91fd002bca"
+        },
+        {
+          "contactAccount": null,
+          "contactPhoneNumber": {
+            "lineType": "Mobile",
+            "phoneNumberCategory": "Holiday Only",
+            "unStructuredPhoneNumber": null,
+            "structuredPhoneNumber": {
+              "areaCode": 178,
+              "localNumber": 5674444,
+              "internationalDialingCode": {
+                "internationalDialingCode": "49",
+                "country": null
+              }
+            }
+          },
+          "contactAddress": null,
+          "contactEmailAddress": null,
+          "correlationID": "e7135748-fc8f-4e96-ac5f-3cc1c7929a6d"
+        },
+        {
+          "contactAccount": null,
+          "contactPhoneNumber": {
+            "lineType": "Landline",
+            "phoneNumberCategory": "Personal",
+            "unStructuredPhoneNumber": null,
+            "structuredPhoneNumber": {
+              "areaCode": 511,
+              "localNumber": 5674444,
+              "internationalDialingCode": {
+                "internationalDialingCode": "49",
+                "country": null
+              }
+            }
+          },
+          "contactAddress": null,
+          "contactEmailAddress": null,
+          "correlationID": "0c32dc1e-bb8c-4f61-be9b-c807bbb19b33"
+        }
+      ]
+    },
+    "customerId": {
+      "masterKey": {
+        "systemOwner": "DE",
+        "system": "KUBA",
+        "id": "T@0248886855@MUSY"
+      },
+      "sourceKeys": {
+        "keies": [
+          {
+            "systemOwner": "DE",
+            "system": "KUBA",
+            "id": "T@0248886855@MUSY"
+          },
+          {
+            "system": "MDM",
+            "systemOwner": "TUI Group",
+            "id": "58d26f6ce4b000fd45f8b144"
+          }
+        ]
+      }
+    },
+    "dateOfBirth": 0,
+    "extraTitle": "Baronin Dr.",
+    "version": 1490111933991,
+    "genderTitle": "Frau",
+    "customerLevel": "Silver",
+    "mdmId": "58d26f6ce4b000fd45f8b144"
+  }
+}
