@@ -7,11 +7,17 @@ import java.io.PushbackReader;
 import java.math.BigInteger;
 import java.util.function.Consumer;
 
-import static com.fernandes.json.parser.TokenType.DOUBLE;
-import static com.fernandes.json.parser.TokenType.INTEGER;
-import static com.fernandes.json.parser.TokenType.LONG;
+import static com.fernandes.json.parser.TokenType.*;
 
 public class NumberMatcher extends AbstractMatcher {
+
+    public static final BigInteger MAX_INT = BigInteger.valueOf(Integer.MAX_VALUE);
+
+    public static final BigInteger MIN_INT = BigInteger.valueOf(Integer.MIN_VALUE);
+
+    public static final BigInteger MAX_LONG = BigInteger.valueOf(Long.MAX_VALUE);
+
+    public static final BigInteger MIN_LONG = BigInteger.valueOf(Long.MIN_VALUE);
 
     public NumberMatcher(Consumer<Token> callback) {
         super(callback);
@@ -45,11 +51,14 @@ public class NumberMatcher extends AbstractMatcher {
             callback.accept(new Token(new Double(numberStr), DOUBLE));
         } else {
             BigInteger bigInteger = new BigInteger(numberStr);
-            if(bigInteger.bitCount() <= 32) {
+            if(bigInteger.compareTo(MAX_INT) <= 0 && bigInteger.compareTo(MIN_INT) >= 0) {
                 callback.accept(new Token(bigInteger.intValue(), INTEGER));
             }
-            else if(bigInteger.bitCount() <= 64) {
+            else if(bigInteger.compareTo(MAX_LONG) <= 0 && bigInteger.compareTo(MIN_LONG) >= 0) {
                 callback.accept(new Token(bigInteger.longValue(), LONG));
+            }
+            else {
+                callback.accept(new Token(bigInteger.longValue(), BIG_INTEGER));
             }
         }
     }
