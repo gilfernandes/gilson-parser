@@ -43,7 +43,7 @@
           "contactEmailAddress": {
             "emailCategory": "Personal",
             "emailAddress": {
-              "email": "klara.besenstiel@tui.de"
+              "email": "klara.besenstiel@tu.de"
             }
           },
           "correlationID": "18414b3b-8b60-4dbd-9aba-4f91fd002bca"
@@ -103,7 +103,7 @@
           },
           {
             "system": "MDM",
-            "systemOwner": "TUI Group",
+            "systemOwner": "TU Group",
             "id": "58d26f6ce4b000fd45f8b144"
           }
         ]

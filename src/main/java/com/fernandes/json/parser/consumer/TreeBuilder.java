@@ -58,6 +58,7 @@ public class TreeBuilder implements Consumer<Token> {
         addObjectToParent(new LinkedHashMap<String, Object>());
     }
 
+    @SuppressWarnings({"unchecked"})
     private void addObjectToParent(Object newKeys) {
         if (currentIsList()) {
             ((List) current.object).add(newKeys);
@@ -71,6 +72,7 @@ public class TreeBuilder implements Consumer<Token> {
         }
     }
 
+    @SuppressWarnings({"unchecked"})
     private void addPrimitive(Serializable object) {
         if (currentIsList()) {
             ((List) current.object).add(object);
@@ -89,10 +91,7 @@ public class TreeBuilder implements Consumer<Token> {
         return current != null && current.object instanceof Map;
     }
 
-    public Object getRoot() {
-        return root;
-    }
-
+    @SuppressWarnings({"unchecked"})
     public Map<String, Object> getRootMap() {
         return rootIsMap() ? (Map<String, Object>) root : null;
     }

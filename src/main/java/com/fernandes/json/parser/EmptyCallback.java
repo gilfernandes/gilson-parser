@@ -3,7 +3,7 @@ package com.fernandes.json.parser;
 import java.util.function.Consumer;
 
 /**
- *
+ * Callback which does nothing.
  */
 public class EmptyCallback implements Consumer<Token> {
 

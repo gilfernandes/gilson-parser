@@ -10,7 +10,7 @@ import java.io.PushbackReader;
 import java.util.function.Consumer;
 
 /**
- *
+ * Matches used to match a full JSON key, including the colon.
  */
 public class KeyMatcher extends AbstractMatcher {
 
@@ -23,7 +23,7 @@ public class KeyMatcher extends AbstractMatcher {
     public KeyMatcher(Consumer<Token> callback) {
         super(callback);
         stringMatcher = new StringMatcher(stringCallback);
-        colonSingleMatcher = new SingleMatcher(':', TokenType.COLON, EmptyCallback.EMPTY_CALLBACK);
+        colonSingleMatcher = new SingleMatcher(':', TokenType.COLON, callback);
     }
 
     @Override

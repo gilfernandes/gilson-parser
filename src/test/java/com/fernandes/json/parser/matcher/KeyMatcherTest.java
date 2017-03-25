@@ -48,8 +48,10 @@ class KeyConsumer implements Consumer<Token> {
      */
     @Override
     public void accept(Token token) {
-        str = token.getObject().toString();
-        tokenType = token.getTokenType();
+        if(token.getTokenType() == TokenType.KEY) {
+            str = token.getObject().toString();
+            tokenType = token.getTokenType();
+        }
     }
 
     public String getStr() {
