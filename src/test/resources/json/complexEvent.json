@@ -1,0 +1,43 @@
+{
+  "response": {
+    "totalCount": 21,
+    "status": 0,
+    "startRow": 0,
+    "endRow": 1,
+    "totalRows": 21,
+    "data": [
+      {
+        "id": 47585,
+        "index": 0,
+        "archived": false,
+        "featured": false,
+        "eventTypeId": 1,
+        "orgId": 2,
+        "name": "Inside Design",
+        "shortDescription": "",
+        "description": "<div>\u000a\u0009For many people, designing their home decors to create that perfect interior look and atmosphere can border on obsessive. &nbsp;Having a beautiful comfy home is great, but what if we spent as much effort designing our internal environment. &nbsp;Your mind is the home you live in, no matter where you put your body. &nbsp;So let&rsquo;s learn the secrets of inside design and make it a place you love to live in.&nbsp;</div>\u000a<div>\u000a\u0009&nbsp;</div>\u000a<div>\u000a\u0009A fascinating conversation with Harshani Perera and Maria Faundez, facilitated by Rosemary Turberville-Smith.</div>\u000a<div>\u000a\u0009&nbsp;</div>\u000a<div>\u000a\u0009Originally from Chile, Maria has lived and worked in London for the past 35 years. Currently a part-time Shiatsu practitioner, her interest lies in the invisible world of energy and sees Martial Arts, Feng Shui, Meridian Therapy as all working to design and bring balance to our inner and outer worlds. In her experience, Raja Yoga meditation has been the most self-empowering.</div>\u000a<div>\u000a\u0009&nbsp;</div>\u000a<div>\u000a\u0009Harshani Perera is an architectural and interior designer at her own design practice, Archincad Ltd. A student of the Brahma Kumaris, she is able to offer her interior design skills and experience at the main London and Leicester Centres. Working on her career with a new level of compassion, she enjoys seeing her clients improving their lifestyle and well-being in well-designed man-made environments.</div>\u000a",
+        "descriptionText": "For many people, designing their home decors to create that perfect interior look and atmosphere can border on obsessive. Having a beautiful comfy home is great, but what if we spent as much effort designing our internal environment. Your mind is the home you live in, no matter where you put your body. So let’s learn the secrets of inside design and make it a place you love to live in. A fascinating conversation with Harshani Perera and Maria Faundez, facilitated by Rosemary Turberville-Smith. Originally from Chile, Maria has lived and worked in London for the past 35 years. Currently a part-time Shiatsu practitioner, her interest lies in the invisible world of energy and sees Martial Arts, Feng Shui, Meridian Therapy as all working to design and bring balance to our inner and outer worlds. In her experience, Raja Yoga meditation has been the most self-empowering. Harshani Perera is an architectural and interior designer at her own design practice, Archincad Ltd. A student of the Brahma Kumaris, she is able to offer her interior design skills and experience at the main London and Leicester Centres. Working on her career with a new level of compassion, she enjoys seeing her clients improving their lifestyle and well-being in well-designed man-made environments.",
+        "speaker": "Harshani Perera, Maria Faundez",
+        "eventDateId": 156307,
+        "hasImage1": false,
+        "requiresRegistration": false,
+        "registrationCount": 0,
+        "maxParticipants": 50,
+        "startTimestamp": "2017-03-30 19:00",
+        "startIso": "2017-03-30T19:00:00",
+        "endTimestamp": "2017-03-30 20:30",
+        "endIso": "2017-03-30T20:30:00",
+        "venue": {
+          "id": 2757,
+          "name": "Global Co-operation House",
+          "address": "65-69 Pound Lane, Willesden Green",
+          "postalCode": "NW10 2HH",
+          "locality": "London",
+          "country": "United Kingdom",
+          "email": "gchenquiries@uk.brahmakumaris.org",
+          "phone": "020 8727 3350"
+        }
+      }
+    ]
+  }
+}

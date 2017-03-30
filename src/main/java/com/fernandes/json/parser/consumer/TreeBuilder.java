@@ -30,6 +30,7 @@ public class TreeBuilder implements Consumer<Token> {
             case INTEGER:
             case LONG:
             case BIG_INTEGER:
+            case BIG_DECIMAL:
             case NULL:
                 addPrimitive(object);
                 break;

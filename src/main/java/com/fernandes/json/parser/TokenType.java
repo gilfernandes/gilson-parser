@@ -9,6 +9,7 @@ public enum TokenType {
     INTEGER,
     LONG,
     BIG_INTEGER,
+    BIG_DECIMAL,
     DOUBLE,
     OBJECT_START,
     OBJECT_END,

@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.io.PushbackReader;
+import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.util.function.Consumer;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -93,6 +95,17 @@ class NumberMatcherTest {
         }
     }
 
+    @Test
+    void whenScientificNumberReader_ShouldReturnTrue() throws IOException {
+        try(PushbackReader reader = ResourceProvider.createScientificNumberReader1()) {
+            boolean match = numberMatcher.match(reader);
+            assertThat(match).isTrue();
+            Number number = consumer.getNumber();
+            assertThat(number).isNotNull();
+            assertThat(number instanceof BigDecimal).isTrue();
+            assertThat(((BigDecimal)number).toPlainString()).isEqualTo("-10100000000");
+        }
+    }
 }
 
 class NumberConsumer implements Consumer<Token> {
@@ -119,6 +132,12 @@ class NumberConsumer implements Consumer<Token> {
                 break;
             case LONG:
                 this.number = (Long) o.getObject();
+                break;
+            case BIG_DECIMAL:
+                this.number = (BigDecimal) o.getObject();
+                break;
+            case BIG_INTEGER:
+                this.number = (BigInteger) o.getObject();
                 break;
         }
     }

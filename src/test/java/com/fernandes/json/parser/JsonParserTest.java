@@ -192,6 +192,24 @@ class JsonParserTest {
             assertThat(customer.get("gender")).isEqualTo("Female");
         }
     }
+
+    @Test
+    void whenParseComplexEvent_ShouldExtractObject() throws IOException {
+        TreeBuilder treeBuilder = new TreeBuilder();
+        parser = new JsonParser(ResourceProvider.createComplexEvent(), treeBuilder);
+        assertThat(parser.parse()).isTrue();
+        Map<String, Object> map = treeBuilder.getRootMap();
+        assertThat(map).isNotNull();
+        Map<String, Object> responseMap = (Map<String, Object>) map.get("response");
+        assertThat(responseMap).isNotNull();
+        System.out.println(responseMap);
+        Object totalCountObject = responseMap.get("totalCount");
+        assertThat(totalCountObject instanceof Integer).isTrue();
+        assertThat(totalCountObject).isEqualTo(21);
+        Object statusObject = responseMap.get("status");
+        assertThat(statusObject).isNotNull();
+        assertThat(statusObject).isEqualTo(0);
+    }
 }
 
 class NestedConsumer implements Consumer<Token> {

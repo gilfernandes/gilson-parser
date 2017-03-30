@@ -23,6 +23,11 @@ public class ResourceProvider {
         return new PushbackReader(reader, 1);
     }
 
+    public static PushbackReader createScientificNumberReader1() throws IOException {
+        StringReader reader = new StringReader("-1.01E+10");
+        return new PushbackReader(reader, 1);
+    }
+
     public static PushbackReader createPositiveLongReader() throws IOException {
         StringReader reader = new StringReader(Long.toString(Long.MAX_VALUE));
         return new PushbackReader(reader, 1);
@@ -118,6 +123,10 @@ public class ResourceProvider {
 
     public static Reader createComplexCustomer() {
         return loadFromCp("json/complexCustomer1.json");
+    }
+
+    public static Reader createComplexEvent() {
+        return loadFromCp("json/complexEvent.json");
     }
 
     public static Reader createArrayWithObject() {
