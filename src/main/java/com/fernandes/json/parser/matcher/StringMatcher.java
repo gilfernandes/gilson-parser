@@ -13,7 +13,7 @@ import java.util.function.Consumer;
 import static com.fernandes.json.parser.TokenType.QUOTE;
 
 /**
- * Matches strings like e.g: "test" with proper double quotes.
+ * Matches strings like e.g: "test" with proper double quotes. Also unicode characters are recognized.
  * Also handles escaped quotes.
  */
 public class StringMatcher extends AbstractMatcher {
